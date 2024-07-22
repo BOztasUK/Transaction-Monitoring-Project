@@ -1,0 +1,13 @@
+prefix=/Users/berkan_oztas/TM-Project/venv
+exec_prefix=/Users/berkan_oztas/TM-Project/venv
+libdir=/Users/berkan_oztas/TM-Project/venv/lib
+sharedlibdir=/Users/berkan_oztas/TM-Project/venv/lib
+includedir=/Users/berkan_oztas/TM-Project/venv/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
