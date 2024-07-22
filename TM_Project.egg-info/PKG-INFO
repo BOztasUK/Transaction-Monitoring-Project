@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: TM-Project
+Version: 0.0.1
+Author: Berkan
+Author-email: berkanoztasuk@gmail.com
+License-File: LICENCE.txt
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: seaborn
