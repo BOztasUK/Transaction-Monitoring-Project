@@ -16,6 +16,9 @@ In this project, we aim to address these limitations by leveraging deep learning
 3. **Deep Learning Exploration**: Developing and experimenting with transformer-based models to determine their effectiveness compared to baseline methods.
 4. **Development of Tab-AML**: Designing and training **Tab-AML**, a transformer-based model specifically for transaction monitoring in AML.
 
+### Dataset
+The dataset used in this project is a synthetic transaction monitoring dataset that I created during my PhD, which is publicly available on Kaggle. You can find the dataset here: [Synthetic Transaction Monitoring Dataset - AML](https://www.kaggle.com/datasets/berkanoztas/synthetic-transaction-monitoring-dataset-aml)
+
 ### Baseline Models
 - **XGBoost**
 - **Logistic Regression**
