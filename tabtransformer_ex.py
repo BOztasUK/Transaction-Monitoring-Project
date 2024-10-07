@@ -21,9 +21,7 @@ set_seeds(seed=28)
 
 
 # Load and preprocess data
-df = pd.read_csv(
-    "/Users/berkan_oztas/TM-Project/data/processed/FINALDATASET.csv (1).csv_"
-)
+df = pd.read_csv("/Users/berkan_oztas/TM-Project/data/processed/Processed_SAMLD.pkl")
 
 # Define column types
 categorical_columns = [

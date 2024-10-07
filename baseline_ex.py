@@ -26,9 +26,7 @@ from src.utils import set_seeds
 set_seeds(seed=28)
 
 # Load and prepare the dataset
-df = pd.read_pickle(
-    "/Users/berkan_oztas/TM-Project/data/processed/01_data_processed.pkl"
-)
+df = pd.read_pickle("/Users/berkan_oztas/TM-Project/data/processed/Processed_SAMLD.pkl")
 
 iterations = 1
 auc_df = pd.DataFrame()

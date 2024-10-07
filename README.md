@@ -1,6 +1,6 @@
 # Development of Tab-AML: A Transformer-Based Model for Transaction Monitoring in Anti-Money Laundering
 
-This repository contains the code for my PhD project: **Enhancing Transaction Monitoring Controls to Detect Money Laundering Using Machine Learning**.
+This repository contains code from my PhD project: **Enhancing Transaction Monitoring Controls to Detect Money Laundering Using Machine Learning**.
 
 ## Problem Statement
 Currently, many banks rely on rules-based methods for transaction monitoring, which can be highly inefficient due to the large number of false positives generated. These false positives lead to high operational costs and can strain investigative teams.
@@ -27,13 +27,17 @@ In this project, we aim to address these limitations by leveraging deep learning
 ### Deep Learning Models
 - **TabTransformer**
 - **TabNet**
-- **Tab-AML** (our proposed transformer-based solution)
+- **Tab-AML** (our enhanced transformer-based solution)
 
-## Findings
+### Key Findings
+In our experiments, the transformer-based models demonstrated superior performance in transaction monitoring. **Tab-AML** achieved an ROC-AUC score of **93.01%**, while **TabTransformer** achieved **85.94%**, both surpassing **XGBoost**’s score of **81.12%**, which has traditionally been considered highly effective for classification tasks in tabular data, including anti-money laundering applications.
+
+The experiments showed that transformer models, particularly **Tab-AML**, excel in handling **interlinked transactions**, largely due to the effectiveness of residual attention and shared embedding mechanisms. These features enhanced the model's ability to capture intricate dependencies between transactions, resulting in improved performance on this specific type of data.
+
 Here are some visual results from our experiments:
 
 ### Model Performance
-Validation and test AUC scores for different models with hyperparameter tuning:
+Validation and test AUC scores for different models after hyperparameter tuning:
 
 ![Validation and Test AUC Scores](Report/Screenshot%202024-10-07%20at%2013.33.17.png)
 
@@ -42,7 +46,7 @@ AUC curve and confusion matrix for the top two models:
 ![AUC Curve and Confusion Matrix](Report/Screenshot%202024-10-07%20at%2013.33.36.png)
 
 ### Exploratory Data Analysis (EDA) Diagrams
-The following visualizations were created during the EDA phase to gain insights into the dataset:
+The following visualizations are some that were created during the EDA phase to gain insights into the dataset:
 
 - **Alerts by Location**:
 
@@ -65,10 +69,10 @@ The following visualizations were created during the EDA phase to gain insights 
   ![Monthly Alerts](Report/Figures/monthly_alerts_by_payment_type.png)
 
 ## Repository Structure
-- **data/**: Contains datasets used for model training and evaluation.
-- **models/**: Includes saved versions of the machine learning and deep learning models.
-- **src/**: Source code for data processing, model training, evaluation, and utilities.
-- **Report/**: Report files, diagrams, and findings.
-- **requirements.txt**: Python packages required to run the project.
-- **README.md**: This documentation.
+- **data/**: Raw and processed datasets for model training and evaluation.
+- **models/**: Saved machine learning and deep learning models.
+- **src/**: Code for data processing, model training, evaluation, and utilities.
+- **Report/**: Project report files, diagrams, and findings.
+- **requirements.txt**: Required Python packages.
+- **README.md**: Project documentation.
 
