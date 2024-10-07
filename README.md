@@ -1,20 +1,74 @@
-## Development of Tab-AML : A Transformer Based Model for Transaction Monitoring in Anti-Money Laundering
-This repository contains the code for my PhD: Enhancing Transaction Monitoring Controls to Detect Money Laundering Using Machine Learning
+# Development of Tab-AML: A Transformer-Based Model for Transaction Monitoring in Anti-Money Laundering
 
-The problem: Curently many banks are using rules based methods for transaction monitoing which is costly due to the number of false poitives thats generated. 
+This repository contains the code for my PhD project: **Enhancing Transaction Monitoring Controls to Detect Money Laundering Using Machine Learning**.
 
-Motivation: Machine learning models such as xgboost have been shown to be effective in detecting anomalies in transaction data. However, there is a lack of research on using deep learning (especially transformer based models) for this task.
+## Problem Statement
+Currently, many banks rely on rules-based methods for transaction monitoring, which can be highly inefficient due to the large number of false positives generated. These false positives lead to high operational costs and can strain investigative teams.
 
-Solution: In this project we inicially conduct eda on the transaction data to understand the data better and to prepare the data for the training of the model. We experiment with various baseline models and deep learning models to find the best model for the task. We then devlop **Tab-AML**, a transformer based model for transaction monitoring.
+## Motivation
+Machine learning models, such as XGBoost, have shown promise in detecting anomalies within transaction data. However, there is a significant lack of research exploring deep learning approaches—especially transformer-based models—for anti-money laundering (AML) transaction monitoring.
 
-- Baseline Models: Xgboost, Logistic Regression, Random Forest, Decision Trees, KNN, and, Naive Bayes.
-- Deep Learning Models: TabTransformer, TabNet, and, Tab-AML.
+## Solution: Tab-AML
+In this project, we aim to address these limitations by leveraging deep learning to improve transaction monitoring in the fight against money laundering. The development process of **Tab-AML** includes:
 
+1. **Exploratory Data Analysis (EDA)**: Conducting a thorough EDA to better understand the data and prepare it for model training.
+2. **Baseline Model Evaluation**: Experimenting with traditional machine learning models to establish baseline performance.
+3. **Deep Learning Exploration**: Developing and experimenting with transformer-based models to determine their effectiveness compared to baseline methods.
+4. **Development of Tab-AML**: Designing and training **Tab-AML**, a transformer-based model specifically for transaction monitoring in AML.
 
-EDA:
-![Figure 2: Transaction Distribution](/Users/berkan_oztas/TM-Project/Report/Figures/alerts_by_receiver_bank_location.png)
-![Figure 3: Anomaly Detection Results](/Users/berkan_oztas/TM-Project/Report/Figures/laundering_typology_distribution.png)
+### Baseline Models
+- **XGBoost**
+- **Logistic Regression**
+- **Random Forest**
+- **Decision Trees**
+- **K-Nearest Neighbors (KNN)**
+- **Naive Bayes**
 
-Findings:
-![Transaction Distribution](/Users/berkan_oztas/TM-Project/Report/Screenshot 2024-10-07 at 13.33.17.png)
-![Anomaly Detection Results](/Users/berkan_oztas/TM-Project/Report/Screenshot 2024-10-07 at 13.33.36.png)
+### Deep Learning Models
+- **TabTransformer**
+- **TabNet**
+- **Tab-AML** (our proposed transformer-based solution)
+
+## Findings
+Here are some visual results from our experiments:
+
+### Model Performance
+Validation and test AUC scores for different models with hyperparameter tuning:
+
+![Validation and Test AUC Scores](Report/Screenshot%202024-10-07%20at%2013.33.17.png)
+
+AUC curve and confusion matrix for the top two models:
+
+![AUC Curve and Confusion Matrix](Report/Screenshot%202024-10-07%20at%2013.33.36.png)
+
+### Exploratory Data Analysis (EDA) Diagrams
+The following visualizations were created during the EDA phase to gain insights into the dataset:
+
+- **Alerts by Location**:
+
+  ![Alerts Location](Report/Figures/alerts_by_receiver_bank_location.png)
+
+- **Laundering Typology Distribution**:
+
+  ![Typology Distribution](Report/Figures/laundering_typology_distribution.png)
+
+- **Feature Correlation Matrix**:
+
+  ![Feature Correlation](Report/Figures/feature_correlation_matrix.png)
+
+- **Laundering Alert Distribution**:
+
+  ![Laundering Alert Distribution](Report/Figures/laundering_alerts_distribution.png)
+
+- **Monthly Alerts by Payment Type**:
+
+  ![Monthly Alerts](Report/Figures/monthly_alerts_by_payment_type.png)
+
+## Repository Structure
+- **data/**: Contains datasets used for model training and evaluation.
+- **models/**: Includes saved versions of the machine learning and deep learning models.
+- **src/**: Source code for data processing, model training, evaluation, and utilities.
+- **Report/**: Report files, diagrams, and findings.
+- **requirements.txt**: Python packages required to run the project.
+- **README.md**: This documentation.
+
