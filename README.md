@@ -16,5 +16,5 @@ EDA:
 ![Figure 3: Anomaly Detection Results](/Users/berkan_oztas/TM-Project/Report/Figures/laundering_typology_distribution.png)
 
 Findings:
-![Transaction Distribution](/Users/berkan_oztas/TM-Project/Screenshot 2024-10-07 at 13.33.17.png)
-![Anomaly Detection Results](/Users/berkan_oztas/TM-Project/Screenshot 2024-10-07 at 13.33.36.png)
+![Transaction Distribution](/Users/berkan_oztas/TM-Project/Report/Screenshot 2024-10-07 at 13.33.17.png)
+![Anomaly Detection Results](/Users/berkan_oztas/TM-Project/Report/Screenshot 2024-10-07 at 13.33.36.png)
