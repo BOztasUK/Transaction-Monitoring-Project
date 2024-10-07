@@ -8,6 +8,14 @@ __pycache__/
 
 # Distribution / packaging
 .Python
+
+ignore/
+db_chap/
+.vscode/
+TM_Project.egg-info/
+.gotattributes/
+setup.py/
+
 build/
 develop-eggs/
 dist/

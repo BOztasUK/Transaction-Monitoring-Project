@@ -1,0 +1,13 @@
+pandas
+numpy
+seaborn
+torch
+scikit-learn
+matplotlib
+seaborn
+scipy
+tqdm
+einops
+xgboost
+
+# -e .
